@@ -1,0 +1,154 @@
+[
+  {
+    "name": "物料代码管理",
+    "identifier": "menu.po.wldm",
+    "menuType": "DIRECTORY",
+    "id": "1763807209608736769",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "供 应 商 管 理",
+    "identifier": "menu.po.gysgl",
+    "menuType": "DIRECTORY",
+    "id": "1769647287786565634",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "计划预算管理",
+    "identifier": "menu.po.jhgl",
+    "menuType": "DIRECTORY",
+    "id": "1765534434683023361",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "寻源合同管理",
+    "identifier": "menu.po.cgxy",
+    "menuType": "DIRECTORY",
+    "id": "1772514362523676674",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "采购订单管理",
+    "identifier": "menu.po.PO",
+    "menuType": "DIRECTORY",
+    "id": "1776937030496841730",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "质量计价管理",
+    "identifier": "menu.po.zlgl",
+    "menuType": "DIRECTORY",
+    "id": "1770783443035123714",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "资材库存管理",
+    "identifier": "menu.po.kcgl",
+    "menuType": "DIRECTORY",
+    "id": "1770736808217309185",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "发票结算管理",
+    "identifier": "menu.po.fpjs",
+    "menuType": "DIRECTORY",
+    "id": "1769918013429018626",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "原料库存管理",
+    "identifier": "menu.po.ylkc",
+    "menuType": "DIRECTORY",
+    "id": "1773965744933990402",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "财务抛账管理",
+    "identifier": "menu.po.cwpzgl",
+    "menuType": "DIRECTORY",
+    "id": "1778026218176667649",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "库存销售管理",
+    "identifier": "menu.po.xsgl",
+    "menuType": "DIRECTORY",
+    "id": "1776534251970260994",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "基础配置管理",
+    "identifier": "menu.po.jcpz",
+    "menuType": "DIRECTORY",
+    "id": "1763842180142620674",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "操作培训视频",
+    "identifier": "menu.po.PMJP02",
+    "menuType": "MENU",
+    "id": "1861922805751828482",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "平台安全配置",
+    "identifier": "menu.po.iam",
+    "menuType": "DIRECTORY",
+    "id": "73669726770065",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "平台基础功能",
+    "identifier": "menu.po.base",
+    "menuType": "DIRECTORY",
+    "id": "72669726769482",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "平台流程配置",
+    "identifier": "menu.po.bpm",
+    "menuType": "DIRECTORY",
+    "id": "72669726769474",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "平台流程中心",
+    "identifier": "menu.po.process",
+    "menuType": "DIRECTORY",
+    "id": "72669726769461",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "job配置",
+    "identifier": "menu.po.JOB",
+    "menuType": "MENU",
+    "id": "1879498896897019905",
+    "pid": "0",
+    "children": []
+  },
+  {
+    "name": "采购虚拟菜单",
+    "identifier": "menu.po.xn",
+    "menuType": "DIRECTORY",
+    "id": "1861593963095502851",
+    "pid": "0",
+    "children": []
+  }
+]
