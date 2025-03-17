@@ -49,7 +49,7 @@ function generateFiles(items, currentPath) {
 			}
 		} else if (menuType === 'MENU' || menuType === 'VIRTUAL') {
 			// 创建 Markdown 文件
-			const filePath = path.join(currentPath, `${safeName}.md`);
+			const filePath = path.join(currentPath, `${safeName}-${identifier.split('.').pop()}.md`);
 
 			// 构建基本内容
 			let content = [
