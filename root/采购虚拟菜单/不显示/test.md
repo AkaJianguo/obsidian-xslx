@@ -1,8 +1,20 @@
-# test
 
 ## 基本信息
 
-- 标识符: TestURL
 - 标识符: menu.po.TestURL
+- 标识符缩写: TestURL
 - 类型: 菜单
 - 路径: /po/TestURL
+
+## 页面功能描述：
+
+
+
+
+
+## 按钮列表:
+
+
+### test
+
+
