@@ -1,69 +1,48 @@
-// 读取xlsx 文件  转 json 文件
-// const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
-// // 读取xlsx文件
-// const workbook = XLSX.readFile(path.resolve(__dirname, 'DATA.xlsx'));
-// const sheetNames = workbook.SheetNames;
-// const worksheet = workbook.Sheets[sheetNames[0]];
-// const data = XLSX.utils.sheet_to_json(worksheet);
-// const jsonData = JSON.stringify(data, null, 2);
-// // 写入json文件
-// fs.writeFileSync(path.resolve(__dirname, 'DATA1.json'), jsonData);
-// 读取json文件
-const data = require("./payload.json");
-
-/* 
-    'name': '物料代码申请维护',
-    'identifier': 'menu.po.PCMA01',
-    "父级标识": "menu.po.PCMA02",
-    '菜单类型': '虚拟菜单' || '菜单'|| '目录',
-    '菜单类型': 2 || 1 || 0 ,
-    "menuType": 'VIRTUAL' || 'MENU'|| 'DIRECTORY', // 菜单类型
-     "id": "1763807653479346178",
-    "pid": "1763807209608736769",
-    children: []
-
-
-
-*/
+const data = require('./payload.json');
 
 // 生成菜单
-const menu = [];
-data.forEach((item) => {
-  const obj = {
-    name: item.name,
-    identifier: item.identifier,
-    menuType: item.menuType,
-    id: item.id,
-    pid: item.pid,
-    children: [
-    ]
-  };
-  menu.push(obj);
-});
 function generateMenu(data) {
+  const result = [];
+  if (!Array.isArray(data)) return result;
+  
   data.forEach((item) => {
-    menu.forEach((menu) => {
-        console.log("🚀 ~ menu.forEach ~ menu.id === item.pid:", menu.id === item.pid)
-        console.log("🚀 ~ menu.forEach ~ item.pid:", item.pid)
-        console.log("🚀 ~ menu.forEach ~ menu.id:", menu.id)
-        
-      if (menu.id === item.pid) {
-        menu.children.push({
-          name: item.name,
-          identifier: item.identifier,
-          menuType: item.menuType,
-          id: item.id,
-          pid: item.pid,
-          children: []
-        });
-      }
-    });
+    // 跳过无效数据
+    if (!item) return;
+    
+    const { name, identifier, menuType, id, pid, url } = item;
+    const menuObj = {
+      name,
+      identifier,
+      menuType,
+      id,
+      pid,
+      url,
+      children: [] // 初始化为空数组
+    };
+    
+    // 只有当children存在且为数组时才递归处理
+    if (item.children && Array.isArray(item.children) && item.children.length > 0) {
+      menuObj.children = generateMenu(item.children);
+    }
+    
+    result.push(menuObj);
   });
+
+  return result;
 }
-generateMenu(data);
-// 生成json文件
-const jsonData = JSON.stringify(menu, null, 2);
-fs.writeFileSync(path.resolve(__dirname, 'menu.json'), jsonData);
+
+// 使用try-catch捕获可能的错误
+try {
+  const resultMenu = generateMenu(data);
+  console.log("菜单生成成功，共有", resultMenu.length, "个顶级菜单项");
+  
+  // 生成json文件
+  const jsonData = JSON.stringify(resultMenu, null, 2);
+  fs.writeFileSync(path.resolve(__dirname, 'menu.json'), jsonData);
+  console.log("menu.json文件生成成功");
+} catch (error) {
+  console.error("生成菜单时出错:", error);
+}
 
