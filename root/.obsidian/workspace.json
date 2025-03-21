@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "19b127b8d85ed286",
+        "id": "3aebe6c87bfffb58",
         "type": "tabs",
         "children": [
           {
-            "id": "1b65a86789d9be9d",
+            "id": "db5aab6eeb32f172",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "平台安全配置/角色管理-role.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "角色管理-role"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PHCT02",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,12 +74,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 324.5
   },
   "right": {
     "id": "d015736942fe338a",
@@ -162,8 +165,36 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1b65a86789d9be9d",
+  "active": "db5aab6eeb32f172",
   "lastOpenFiles": [
-    "寻源合同管理/采购合同管理/合同编辑-PHCT02.md"
+    "Public/images/角色管理.png",
+    "平台安全配置/角色管理-role.md",
+    "Public/images",
+    "未命名",
+    "Public",
+    "采购虚拟菜单/结算单审核-POJS38.md",
+    "采购虚拟菜单/变更单管理-PMJPX3.md",
+    "计划预算管理/原料采购计划管理/原料采购计划创建-PRYL02.md",
+    "计划预算管理/原料采购计划管理/原料采购计划创建/原料采购计划拆分-PRYL02B.md",
+    "平台安全配置/组织管理/主数据同步/同步详情-orgSyncDetail.md",
+    "计划预算管理/设备资材计划管理/备件资材需求计划提报-PRLY01.md",
+    "计划预算管理/设备资材计划基础管理/成本中心-PRJC02.md",
+    "寻源合同管理/采购合同管理/拟签单创建合同-PHCT03.md",
+    "寻源合同管理/采购拟签管理/直接拟签管理-PHXJ31YL.md",
+    "平台安全配置/README.md",
+    "平台安全配置/组件管理/组件资源管理-resource.md",
+    "平台安全配置/组件管理/页面操作-pages.md",
+    "平台安全配置/菜单管理-menu.md",
+    "平台安全配置/组件管理-components.md",
+    "平台安全配置/角色管理/分配资源-repturces.md",
+    "平台安全配置/角色管理/分配用户-user.md",
+    "平台安全配置/用户管理-user.md",
+    "计划预算管理/设备资材计划查询/计划查询-PRLY30.md",
+    "计划预算管理/设备资材计划查询/README.md",
+    "物料代码管理/物料代码管理/物料综合查询_维护-PCMA02.md",
+    "物料代码管理/物料代码管理/物料综合查询_维护/物料详细信息-PCMA03.md",
+    "计划预算管理/设备资材计划基础管理/成本中心与岗位号对应关系-PRJC06.md",
+    "物料代码管理/物料代码管理/物料代码变更履历-PCMA20.md",
+    "物料代码管理/物料代码管理/README.md"
   ]
 }
